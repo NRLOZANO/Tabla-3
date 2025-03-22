@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 2px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        .no-border {
+            border: none;
+        }
+        .total {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .align-right {
+            text-align: right;
+            padding-right: 10px;
+        }
+        .no-border td, .no-border th {
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <!-- Encabezado Cliente y Remitente (Fusionado correctamente) -->
+        <tr class="no-border">
+            <th colspan="2"><h2>Cliente</h2><br> Luis Cabrera Benito</th>
+            <th colspan="2"><h2>Remitente</h2><br> Luis Cabrera Benito</th>
+        </tr>
+
+        <!-- Encabezado de productos -->
+        <tr>
+            <th>Descripción</th>
+            <th>Cantidad</th>
+            <th>Precio unitario</th>
+            <th>Total</th>
+        </tr>
+
+        <!-- Productos -->
+        <tr>
+            <td>Procesador AMD Ryzen 7</td>
+            <td>1.00</td>
+            <td>$50.00</td>
+            <td>$50.00</td>
+        </tr>
+        <tr>
+            <td>Tarjeta de video</td>
+            <td>2.00</td>
+            <td>$800.00</td>
+            <td>$1,600.00</td>
+        </tr>
+
+        <!-- Subtotales con líneas de separación -->
+        <tr class="total-row">
+            <td colspan="3"style="text-align: right;">Subtotal</td>
+            <td>$1,650.00</td>
+        </tr>
+        <tr class="total-row">
+            <td colspan="3"style="text-align: right;">Descuento</td>
+            <td>$0.00</td>
+        </tr>
+        <tr class="total-row">
+            <td colspan="3"style="text-align: right;">Subtotal con descuento</td>
+            <td>$1,650.00</td>
+        </tr>
+        <tr class="total-row">
+            <td colspan="3"style="text-align: right;">Impuestos</td>
+            <td>$264.00</td>
+        </tr>
+
+        <!-- Total Final con borde más grueso -->
+        <tr class="total-row">
+            <td colspan="3"style="text-align: right;"><strong>Total</strong></td>
+            <td><strong>$1,914.00</strong></td>
+        </tr>
+    </table>
+
+</body>
+</html> 
+
+
+
